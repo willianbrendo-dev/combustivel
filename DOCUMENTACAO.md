@@ -20,7 +20,7 @@ O **FuelControl** é um sistema de gestão de postos de combustível focado em *
 | **E-mail** | `admin@admin.com` |
 | **Senha**  | `admin@321`       |
 
-> ⚠️ A autenticação atual utiliza credenciais fixas com armazenamento em `localStorage` (`fuelapp_auth`). Recomenda-se migrar para autenticação via Lovable Cloud em produção.
+> ✅ O sistema já possui um backend próprio em Node.js (Express) com banco de dados Supabase (PostgreSQL), utilizando autenticação real com criptografia bcrypt.
 
 ---
 
@@ -298,8 +298,8 @@ Se ao final do mês foram vendidos apenas 38L e restam 1L no tanque:
 
 ## 11. Recomendações de Evolução
 
-1. **Lovable Cloud:** Conectar banco de dados para persistência de reservatórios, vendas e transações.
-2. **Autenticação real:** Migrar para auth com Lovable Cloud (e-mail/senha, Google).
+1. **Relatórios Avançados:** Incluir mais filtros de faturamento e despesas.
+2. **Autenticação Avançada:** Implementar e-mails para recuperação de senha da plataforma.
 3. **PDF real:** Usar biblioteca como `jsPDF` para gerar relatórios em PDF.
 4. **Reabastecimento:** Permitir adicionar litros com atualização do custo médio.
 5. **Multi-usuário:** Implementar perfis (admin, operador, gerente) com permissões distintas.
